@@ -1,0 +1,5 @@
+spring:
+  webflux:
+    hiddenmethod:
+      filter:
+        enabled: true
