@@ -1,3 +1,4 @@
 rootProject.name = 'spring-reactive'
 include 'ch1'
 include 'ch2'
+include 'ch3'
