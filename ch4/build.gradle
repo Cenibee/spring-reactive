@@ -2,16 +2,24 @@ plugins {
     id 'org.springframework.boot' version '2.5.2'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+
+    //https://github.com/n0mer/gradle-git-properties - git 관련 info plugin
+    id "com.gorylenko.gradle-git-properties" version "2.3.1"
 }
 
 group = 'com.cenibee.book.springreactive'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '8'
 
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
+}
+
+// gradle 에서 프로젝트 관련 정보 info 에 뽑아내기
+springBoot {
+    buildInfo()
 }
 
 repositories {
@@ -22,6 +30,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.mongodb:mongodb-driver-sync'
     implementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
 

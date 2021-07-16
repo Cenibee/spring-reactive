@@ -56,3 +56,19 @@
 
 > `StepVerifier`, 시그널 검증, 슬라이스 테스트, 블로킹 검출
 
+### 2021.07.16 다섯째날
+
+- 5장
+  - 애플리케이션 배포
+    > 우버 JAR(bootJar), Dockerfile 이미지, gradle 이미지(bootBuildImage) 배포
+  - 운영 애플리케이션 관리
+    > actuator -> loggers 의 경우 POST 요청으로 RESTful 하게 레벨을 변경할 수 있다!
+  - 다양한 운영 데이터 확인
+    > heap dump 는 jhat 명령 or visual vm 으로 확인
+  - 관리 서비스 경로 수정
+  - 정리
+    - 실행 가능한 JAR 파일 생성
+    - 계층 기반 `Dockfil` 작성 및 컨테이너 생성
+    - `Dockerfile` 없이 컨테이너 생성
+    - 스프링 부트 액추에이터 추가
+    - 필요한 관리 서비스만 노출

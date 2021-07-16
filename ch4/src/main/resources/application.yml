@@ -14,3 +14,23 @@ spring:
 logging:
   level:
     web: TRACE
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    info:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /
+      path-mapping:
+        loggers: logs
+
+
+info:
+  java:
+    version: "${java.version}"
