@@ -13,6 +13,7 @@ public class CartItem {
 
     public CartItem(Item item) {
         this.item = item;
+        this.quantity = 1;
     }
 
     public void increment() {

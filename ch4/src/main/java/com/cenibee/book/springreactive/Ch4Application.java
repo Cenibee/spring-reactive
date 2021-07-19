@@ -2,15 +2,13 @@ package com.cenibee.book.springreactive;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.spring5.view.reactive.ThymeleafReactiveView;
-import reactor.blockhound.BlockHound;
-import reactor.blockhound.integration.BlockHoundIntegration;
+import org.springframework.hateoas.config.EnableHypermediaSupport;
 
-import java.util.ServiceLoader;
-import java.util.stream.StreamSupport;
+import static org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType.HAL;
+import static org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType.HAL_FORMS;
 
 @SpringBootApplication
+@EnableHypermediaSupport(type = { HAL, HAL_FORMS })
 public class Ch4Application {
 
     public static void main(String[] args) {

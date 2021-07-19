@@ -72,3 +72,17 @@
     - `Dockerfile` 없이 컨테이너 생성
     - 스프링 부트 액추에이터 추가
     - 필요한 관리 서비스만 노출
+
+### 2021.07.17 ~ 19
+
+- 6장
+  - HTTP 웹 서비스 구축
+  - API 포털 생성
+    > `preprocessResponse` -> `OperationPreprocessor` 인터페이스로 구현
+  - API 진화 반영
+  - 하이퍼미디어 기반 웹 서비스 구축
+  - 하이퍼미디어의 가치
+    > [진부함을 넘어선 REST](https://speakerdeck.com/olivergierke/rest-beyond-the-obvious-api-design-for-ever-evolving-systems) 과 [영상](https://www.youtube.com/watch?v=x_9OJKAv-ic&ab_channel=Devoxx)
+  - API 에 행동 유동성 추가
+    > `@EnableHyperMediaSupport` - `HAL`, `HAL_FORMS`
+  
