@@ -14,6 +14,16 @@ spring:
 logging:
   level:
     web: TRACE
+    org:
+      springframework:
+        amqp: DEBUG
+        messaging: DEBUG
+        data: DEBUG
+    com:
+      spring:
+        book:
+          springreactive: DEBUG
+    reactor: DEBUG
 
 
 management:
