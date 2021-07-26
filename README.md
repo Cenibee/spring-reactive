@@ -99,4 +99,20 @@
     > `testcontainers` 라이브러리
   - 스케줄러를 사용해서 블로킹 API 감싸기
     > `Schedulers` 스레드 종류
+    
+
+### 2021.07.26~27
+
+- 8장
+  - R 소켓 소개
+  - 리액티브 프로토콜 탄생
+  - R 소켓 패러다임
+    - 요청-응답 (request-response): 1개의 스트림
+    - 요청-스트림 (request-stream): 다수의 유한한 스트림
+    - 실행 후 망각 (fire-and-forget): 무응답
+    - 채널 (channel): 양방향
+  - R 소켓 서버 생성
+  - R 소켓 클라이언트 생성
+  
+
   

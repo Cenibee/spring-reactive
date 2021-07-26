@@ -11,6 +11,11 @@ spring:
   thymeleaf:
     cache: false
 
+  rsocket:
+    server:
+      port: 7000
+      transport: tcp
+
 logging:
   level:
     web: TRACE
